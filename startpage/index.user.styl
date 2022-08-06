@@ -1,21 +1,35 @@
 /* ==UserStyle==
-@name           startpage
-@version        1.0
+@name           startpage focus
+@version        1.0.0
 @namespace      d.wolf.gdn
 @preprocessor 	stylus
+@description    Clean, minimalistic redesign of the startpage to stay in focus.
+@author		    David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@homepageURL	https://github.com/devidw/user-styles
+@supportURL		https://github.com/devidw/user-styles/issues
+@license		Unlicense
 ==/UserStyle== */
 @-moz-document domain("startpage.com")
-	.wp-qi-tp
 	.a-gl-tp
 	.w-gl__label
 	.widget-install-privacy-protect
 	.layout-web__footer
+	#main + div
+	.layout-video__footer
 	#feedback-button-container
 	.layout-web__sidebar
 	div.home-btn-logo
 	.home-btn-magnifying
 	.menus
+	.pagination__next-prev-button
 		display none !important
+
+	body
+		background #171b25
+
+	#header header
+		background #171b25
+		box-shadow 0px 10px 50px 5px #a7b1fc20
 
 	.hamburger-menu
 		display block
@@ -25,20 +39,28 @@
 		margin-right auto
 		justify-content center
 
+		.layout-web__mainline
+			margin 0
+
 	.main-controls
 		justify-content center !important
 
-	.search-form input
-	.inline-nav-menu__container
-		text-align center
+	.search-form
+		div
+			margin auto
+
+		input:not(:focus)
+			text-align center
 
 	.inline-nav
 		margin-left 0 !important
 		max-width unset
 		justify-content center
 
-	.search-form div
-		max-width unset
+	.categories button
+	.categories button:hover
+		border-bottom none
+		font-size small
 
 	.sp-gl__container
 		margin-left 0
@@ -47,6 +69,9 @@
 	.search-filters-toolbar__container a
 	.inline-nav
 		opacity 0.5
+
+	.layout-web__inline-nav-container
+		margin-bottom 1.5rem
 
 	.w-gl__result
 	.w-gl__result.linkHover
@@ -85,3 +110,8 @@
 
 			h3
 				padding-left 0.5rem
+
+	.pagination
+		justify-content center
+		margin-left auto
+		margin-right auto
