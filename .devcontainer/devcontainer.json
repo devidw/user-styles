@@ -26,7 +26,8 @@
 				"sysoev.language-stylus",
 				"thisismanta.stylus-supremacy",
 				"asciidoctor.asciidoctor-vscode",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"EditorConfig.EditorConfig"
 			]
 		}
 	}
