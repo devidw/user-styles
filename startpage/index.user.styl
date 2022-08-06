@@ -1,6 +1,6 @@
 /* ==UserStyle==
-@name           startpage focus
-@version        1.0.1
+@name           Startpage Full-Focus
+@version        1.0.2
 @namespace      d.wolf.gdn
 @preprocessor 	stylus
 @description    Clean, minimalistic redesign of the startpage to stay in focus.
@@ -10,6 +10,10 @@
 @license		Unlicense
 ==/UserStyle== */
 @-moz-document domain("startpage.com")
+    .home .home__section-one__search-logo-container
+    .home .footer-home-above-fold
+    .home *[class*='hamburger-menu__']:not(.hamburger-menu__button)
+    .home h1.subtitle
     .a-gl-tp
     .w-gl__label
     .widget-install-privacy-protect
@@ -23,6 +27,16 @@
     .menus
     .pagination__next-prev-button
         display none !important
+
+    .home__section-one__search
+        justify-content center
+
+    input
+        &:not(:focus)
+            text-align center
+
+        &::placeholder
+            opacity 0
 
     body
         background #171b25
@@ -46,12 +60,11 @@
         justify-content center !important
 
     .search-form
-        div
+        margin-right -8px
+
+        & > div
             margin auto
             background none
-
-    input:not(:focus)
-        text-align center
 
     .inline-nav
         margin-left 0 !important
@@ -66,6 +79,7 @@
     .sp-gl__container
         margin-left 0
 
+    .hamburger-menu-home__button
     .search-filters-toolbar__container button
     .search-filters-toolbar__container a
     .inline-nav
