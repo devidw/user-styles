@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name           Wikipedia Reading
+@version        1.0.0
+@namespace      d.wolf.gdn
+@preprocessor 	stylus
+@description    Clean, minimalistic Wikipedia redesign for reading.
+@author		    David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@homepageURL	https://github.com/devidw/user-styles
+@supportURL		https://github.com/devidw/user-styles/issues
+@license		Unlicense
+==/UserStyle== */
+
+@-moz-document domain("wikipedia.org")
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+
+    // Layout
+    #mw-page-base
+    #mw-navigation
+    .mw-footer
+    // Other
+    .mw-indicators
+    #siteNotice
+    #siteSub
+        display none
+
+    .mw-body
+        margin-left auto
+        margin-right auto
+        max-width 640px
+        border none
+        background transparent
+        font-size 23px
+        font-family 'Noto Serif', serif
+
+        // Offset extra media from text
+        @media (min-width 1024px)
+            .infobox
+            .sidebar
+            .thumb.tright
+                margin-right -10rem
+        
+            .thumb.tleft
+                margin-left -10rem
