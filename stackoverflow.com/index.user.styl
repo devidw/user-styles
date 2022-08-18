@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           Stackoverflow Full-Focus
+@version        0.1.0
+@namespace      d.wolf.gdn
+@preprocessor 	stylus
+@description    Clean, minimalistic Stackoverflow redesign for reading.
+@author		    David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@homepageURL	https://github.com/devidw/user-styles
+@supportURL		https://github.com/devidw/user-styles/issues
+@license		Unlicense
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com")
+    // .s-topbar .s-topbar--logo
+    .s-topbar .s-navigation
+    #sidebar :is(.s-sidebarwidget__yellow, .js-join-leave-container,
+    .newsletter-ad, .sidebar-subcommunity, #feed-link)
+    #question-header + div > .fc-light
+    footer#footer
+        display none
+    

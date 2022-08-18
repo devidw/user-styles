@@ -1,6 +1,6 @@
 = Wikipedia Reader Mode
 
-image::./preview.png[Wikipedia Reader Mode]
+image::./preview.png[Wikipedia Reader Mode, link="https://userstyles.world/style/6009/wikipedia-reading"]
 
 Reading experience in the screenshot is a combination of this user style with
 https://darkreader.org/[Dark Reader] and https://brktfldg.wolf.gdn/[Brktfldg].
