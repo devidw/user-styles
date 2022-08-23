@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name           Python docs centered
+@version        0.1.0
+@namespace      d.wolf.gdn
+@preprocessor   stylus
+@description    Clean, minimalistic Python docs redesign for reading.
+@author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@homepageURL    https://github.com/devidw/user-styles
+@supportURL     https://github.com/devidw/user-styles/issues
+@license        Unlicense
+==/UserStyle== */
+
+@-moz-document domain("python.org")
+    .bodywrapper
+        // Also have spacing when the toc is collapsed to keep the doc centered
+        margin-left: 230px !important
+
+    .body[role="main"]
+        // main doc has max-width of 800px
+        margin-left calc(50% - 400px)
