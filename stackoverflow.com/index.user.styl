@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Stackoverflow Full-Focus
-@version        0.1.1
+@name           Stackoverflow Content First
+@version        0.1.2
 @namespace      d.wolf.gdn
 @preprocessor   stylus
-@description    Clean, minimalistic Stackoverflow redesign for full-focus.
+@description    Clean, minimalistic content first approach to Stackoverflow.
 @author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
 @updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/stackoverflow.com/index.user.styl
 @homepageURL    https://github.com/devidw/user-styles
@@ -15,19 +15,22 @@
     .s-topbar .s-navigation
     // #sidebar :is(.s-sidebarwidget__yellow, .js-join-leave-container,
     // .newsletter-ad, .sidebar-subcommunity, #feed-link)
-    .question-page :is(#sidebar, .bottom-notice, .downvoted-answer)
+    .question-page :is(#sidebar, .bottom-notice, .downvoted-answer,
+    #answers-header h2)
     #question-header + div > .fc-light
+    [data-s-popover-reference-selector="#trending-sort-info"]
+    [for="answer-sort-dropdown-select-menu"]
     footer#footer
         display none
 
     .question-page
     #content
-        background var(--highlight-bg) !important
+        background var(--theme-footer-background-color) !important
 
     .question-page
-
         & > .container
-            max-width 1000px !important
+            max-width 800px !important
+            padding-top 2rem
 
         #mainbar
             width unset
@@ -35,11 +38,14 @@
         #question-header + div
             border-bottom 0 !important
 
+        #answers-header
+            margin-bottom 2rem
+
         #answers > .answer
         .question
             background var(--theme-background-color)
             border-bottom 0 !important
-            margin-bottom 3rem
-            padding 1rem
+            margin-bottom 4rem
+            padding 2rem
             border-radius .5rem
     
