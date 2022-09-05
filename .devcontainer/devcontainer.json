@@ -27,7 +27,8 @@
 				"thisismanta.stylus-supremacy",
 				"asciidoctor.asciidoctor-vscode",
 				"GitHub.copilot",
-				"EditorConfig.EditorConfig"
+				"EditorConfig.EditorConfig",
+				"MichaelCurrin.auto-commit-msg"
 			]
 		}
 	}
