@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           WPGraphQL
+@version        1.0.0
+@namespace      d.wolf.gdn
+@preprocessor 	stylus
+@description    Fix limited graph explorer height.
+@author		    David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/wp-graphql/index.user.styl
+@homepageURL	https://github.com/devidw/user-styles/tree/master/wp-graphql
+@supportURL		https://github.com/devidw/user-styles/issues
+@license		Unlicense
+==/UserStyle== */
+
+@-moz-document regexp(".*page=graphiql-ide.*")
+    .graphiql-explorer-root
+        .ant-collapse-content
+            max-height unset
