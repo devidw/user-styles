@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           No More GIFs
-@version        1.0.0
+@version        1.0.1
 @namespace      d.wolf.gdn
 @preprocessor   stylus
 @description    Black out all GIFs, reveal on hover.
@@ -13,6 +13,7 @@
 
 @-moz-document regexp(".*")
     img[src$=".gif"]
+    iframe[src^="https://giphy.com/embed/"]
         filter: brightness(0) blur(10px)
         transition filter 1s
 
