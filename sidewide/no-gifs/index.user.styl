@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           No More GIFs
+@version        1.0.0
+@namespace      d.wolf.gdn
+@preprocessor 	stylus
+@description    Black out all GIFs, reveal on hover.
+@author		    David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sidewide/no-gifs/index.user.styl
+@homepageURL	https://github.com/devidw/user-styles/tree/master/sidewide/no-gifs
+@supportURL		https://github.com/devidw/user-styles/issues
+@license		Unlicense
+==/UserStyle== */
+
+@-moz-document regexp(".*")
+    // We don't want to be distracted from looping GIFs
+    img[src$=".gif"]
+        filter: brightness(0) blur(10px)
+        transition filter 1s
+
+        &:hover
+            filter: brightness(1)
