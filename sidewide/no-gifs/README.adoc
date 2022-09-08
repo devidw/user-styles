@@ -1,1 +1,3 @@
-= all
+= No More GIFs
+
+We don't want to be distracted by looping GIFs

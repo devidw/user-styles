@@ -12,7 +12,6 @@
 ==/UserStyle== */
 
 @-moz-document regexp(".*")
-    // We don't want to be distracted from looping GIFs
     img[src$=".gif"]
         filter: brightness(0) blur(10px)
         transition filter 1s
