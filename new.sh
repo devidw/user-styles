@@ -9,13 +9,13 @@ CONTENT_STYL=$(cat <<EOF
 @name           $DOMAIN
 @version        1.0.0
 @namespace      d.wolf.gdn
-@preprocessor 	stylus
+@preprocessor   stylus
 @description    Clean, minimalistic redesign.
-@author		    David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
 @updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/$DOMAIN/index.user.styl
-@homepageURL	https://github.com/devidw/user-styles/tree/master/$DOMAIN
-@supportURL		https://github.com/devidw/user-styles/issues
-@license		Unlicense
+@homepageURL    https://github.com/devidw/user-styles/tree/master/$DOMAIN
+@supportURL     https://github.com/devidw/user-styles/issues
+@license        Unlicense
 ==/UserStyle== */
 
 @-moz-document domain("$DOMAIN")
