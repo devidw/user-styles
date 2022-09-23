@@ -12,8 +12,8 @@ CONTENT_STYL=$(cat <<EOF
 @preprocessor   stylus
 @description    Clean, minimalistic redesign.
 @author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
-@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/$DOMAIN/index.user.styl
-@homepageURL    https://github.com/devidw/user-styles/tree/master/$DOMAIN
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sites/$DOMAIN/index.user.styl
+@homepageURL    https://github.com/devidw/user-styles/tree/master/sites/$DOMAIN
 @supportURL     https://github.com/devidw/user-styles/issues
 @license        Unlicense
 ==/UserStyle== */
