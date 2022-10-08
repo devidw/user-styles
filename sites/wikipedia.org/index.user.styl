@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Wikipedia Reading
-@version        1.0.1
+@version        1.0.2
 @namespace      d.wolf.gdn
 @preprocessor 	stylus
 @description    Clean, minimalistic Wikipedia redesign for reading.
@@ -12,7 +12,15 @@
 ==/UserStyle== */
 
 @-moz-document domain("wikipedia.org")
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+    @import
+    url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+        
+    body
+        // Optimize typo display
+        text-rendering optimizeLegibility
+        font-smooth always
+        -webkit-font-smoothing antialiased
+        -moz-osx-font-smoothing grayscale
 
     // Layout
     #mw-page-base
