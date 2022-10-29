@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name           internetcomputer.org
+@version        1.0.0
+@namespace      d.wolf.gdn
+@preprocessor   stylus
+@description    Little tweaks for internetcomputer.org 
+@author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sites/internetcomputer.org/index.user.styl
+@homepageURL    https://github.com/devidw/user-styles/tree/master/sites/internetcomputer.org
+@supportURL     https://github.com/devidw/user-styles/issues
+@license        Unlicense
+==/UserStyle== */
+
+@-moz-document domain("internetcomputer.org")
+  div[class^="docMainContainer"]
+    & > .container
+      max-width unset !important
+
+      & > .row
+        justify-content center !important
+
+        & > .col
+          &:first-child
+            max-width 633px !important
