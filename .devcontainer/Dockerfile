@@ -1,3 +1,3 @@
-FROM debian:stable-slim 
+FROM node:19 
 
-RUN apt update && apt install git -y
+RUN corepack enable

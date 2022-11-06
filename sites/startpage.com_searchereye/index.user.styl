@@ -1,0 +1,168 @@
+/* ==UserStyle==
+@name           Startpage Searchereye Theme
+@version        1.0.0
+@namespace      d.wolf.gdn
+@preprocessor 	stylus
+@description    Search engine interface design from The Peripheral.
+@author		    David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sites/startpage.com_searchereye/index.user.styl
+@homepageURL	https://github.com/devidw/user-styles
+@supportURL		https://github.com/devidw/user-styles/issues
+@license		Unlicense
+==/UserStyle== */
+@-moz-document domain("startpage.com")
+    .home .home__section-one__search-logo-container
+    .home .footer-home-above-fold
+    .home *[class*='hamburger-menu__']:not(.hamburger-menu__button)
+    .home h1.subtitle
+    .a-gl-tp
+    .w-gl__label
+    .widget-install-privacy-protect
+    .layout-web__footer
+    #main + div
+    .layout-video__footer
+    #feedback-button-container
+    .layout-web__sidebar
+    div.home-btn-logo
+    .home-btn-magnifying
+    .menus
+    .pagination__next-prev-button
+    .top-nav-container
+    .w-gl__anonymous-view-url
+        display none !important
+
+    .home__section-one__search
+        justify-content center
+
+    body
+    .layout-web
+    .layout-web__body
+    .w-gl
+        background #07151b !important
+
+    #header header
+        background #07151b
+
+    .hamburger-menu
+        display block
+
+    .layout-web__body
+        margin-left auto
+        margin-right auto
+        justify-content center
+        padding-top 0
+
+        .layout-web__mainline
+            margin 0
+
+    .main-controls
+        justify-content center !important
+
+    .search-form
+        margin-right -8px
+
+        & > div
+            margin auto
+            background none
+            border-radius .45rem !important
+            border-color grey !important
+
+            input
+                font-weight 500
+                font-size 1rem
+                letter-spacing .3px
+
+                &::placeholder
+                    opacity 0
+
+    .inline-nav
+        margin-left 0 !important
+        max-width unset
+        justify-content center
+
+    .categories button
+    .categories button:hover
+        border-bottom none
+        font-size small
+
+    .sp-gl__container
+        margin-left 0
+
+    .hamburger-menu-home__button
+    .search-filters-toolbar__container button
+    .search-filters-toolbar__container a
+    .inline-nav
+        opacity 0.5
+
+    // Search result cards
+    .w-gl__result
+    .w-gl__result.linkHover
+        margin-top 1rem
+        margin-left 0
+        transition all 0.2s ease-in-out
+        border none !important
+        background transparent !important
+
+    .w-gl__result__main
+        display grid
+        // grid-template-rows 1fr 1fr 1fr
+        // grid-template-columns repeat(5, 1fr)
+        grid-gap 0.3rem
+        padding 0
+
+        & > .w-gl__result-second-line-container
+                display block
+                grid-row-start 1
+                grid-column 1 / 6
+
+        & > .w-gl__description
+            color: #858f93
+            grid-column 1 / 6
+
+        & > span[class^="go"]
+            grid-row-start 2
+            grid-column-start 1
+            margin-top 0
+            display flex
+
+            .ub-button
+                font-size 0.7rem
+                text-transform capitalize
+                color #c9a659
+
+                &::after
+                    padding-left 0.35rem
+                    content "⇢"
+                    display inline-block
+
+        & > .w-gl__result-url-container
+            grid-row-start 2
+            align-items start !important
+
+    .w-gl__result-url
+        pointer-events none
+        font-size 0.7rem
+        color #c9a659 !important
+
+    .w-gl__result-title        
+        h3
+            display block
+            transition all 0.2s ease-in-out
+            color #3b77c9
+
+        &:hover
+            text-decoration none !important
+
+            h3
+                padding-left 0.5rem
+
+    .pagination
+        justify-content center
+        margin-left auto
+        margin-right auto
+
+        button
+            background #3b77c9 !important
+            color #000 !important
+            border none !important
+            border-radius .45rem !important
