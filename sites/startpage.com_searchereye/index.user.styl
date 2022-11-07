@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Startpage Searchereye Theme
-@version        1.0.0
+@version        1.0.1
 @namespace      d.wolf.gdn
 @preprocessor 	stylus
 @description    Search engine interface design from The Peripheral.
@@ -144,11 +144,13 @@
         font-size 0.7rem
         color #c9a659 !important
 
-    .w-gl__result-title        
+    .w-gl__result-title
+        &:link
+            color #3b77c9 !important
+
         h3
             display block
             transition all 0.2s ease-in-out
-            color #3b77c9
 
         &:hover
             text-decoration none !important
