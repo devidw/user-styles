@@ -1,0 +1,30 @@
+/* ==UserStyle==
+@name           you.com
+@version        1.0.0
+@namespace      d.wolf.gdn
+@preprocessor   stylus
+@description    Little tweaks for you.com 
+@author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sites/you.com/index.user.styl
+@homepageURL    https://github.com/devidw/user-styles/tree/master/sites/you.com
+@supportURL     https://github.com/devidw/user-styles/issues
+@license        Unlicense
+==/UserStyle== */
+
+@-moz-document domain("you.com")
+  // logo
+  #header > :last-child > :first-child
+  // footer
+  #section + div
+    display: none !important
+
+  // center header search
+  #header > :last-child
+    justify-content center !important
+
+    & > :last-child
+      margin-left unset !important
+
+  // center main search results
+  div.full-page-container > div
+    justify-content center !important
