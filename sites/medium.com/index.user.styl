@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           Readable Medium
+@version        1.0.0
+@namespace      d.wolf.gdn
+@preprocessor   stylus
+@description    Making medium.com readable 
+@author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sites/medium.com/index.user.styl
+@homepageURL    https://github.com/devidw/user-styles/tree/master/sites/medium.com
+@supportURL     https://github.com/devidw/user-styles/issues
+@license        Unlicense
+==/UserStyle== */
+
+@-moz-document domain("medium.com")
+  // navbar
+  #root > div > div:last-child > div:first-child
+  // author aside
+  main + div
+  // author + sharing above article
+  header.pw-post-byline-header
+  // only content area no footer, tags, sharing, etc.
+  main > div > *:not(div:nth-of-type(2))
+  // cover image
+  section figure:first-of-type
+    display none !important
+
+  body
+    margin-top 4rem
