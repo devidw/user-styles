@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Wikipedia Reading
-@version        1.0.3
+@version        1.0.4
 @namespace      d.wolf.gdn
 @preprocessor   stylus
 @description    Clean, minimalistic Wikipedia redesign for reading.
@@ -9,6 +9,7 @@
 @homepageURL    https://github.com/devidw/user-styles
 @supportURL     https://github.com/devidw/user-styles/issues
 @license        Unlicense
+@var checkbox   fixedToc "Fixed Toc" 1
 ==/UserStyle== */
 
 @-moz-document domain("wikipedia.org")
@@ -27,6 +28,7 @@
     .mw-footer
     // Other
     .mw-indicators
+    .mw-editsection
     #siteSub
     // Notices
     #siteNotice
@@ -51,3 +53,27 @@
         
             .thumb.tleft
                 margin-left -10rem
+
+    if (fixedToc == 1)
+        @media (min-width 1320px)
+            #toc
+                position fixed
+                left 0
+                top 0
+                height 100vh
+                max-width 25vw
+                background transparent
+                border-left-width 0
+                border-top-width 0
+                border-bottom-width 0
+                font-size 1rem
+
+                &:not(:hover)
+                    filter brightness(0.6)
+
+                ul
+                    max-height 95vh
+                    overflow-y auto
+                
+                #mw-toc-heading
+                    display none
