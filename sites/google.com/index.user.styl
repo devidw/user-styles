@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           google.com
+@name           Centered Google Search
 @version        1.0.0
 @namespace      d.wolf.gdn
 @preprocessor   stylus
@@ -16,11 +16,34 @@
   #logo
     display none
 
-  // form[action="/search"] > div:first-child > div:first-child
-  // #appbar
+  form[action="/search"]
+    width 100%
+    display flex
+    justify-content center
+
+    & > div > div
+      padding-left 0
+
+  #hdtb // header tool bar
+  #slim_appbar // X search results in Y seconds
+    display flex
+    justify-content center
+
+  #hdtb-msb 
+    width var(--center-width)
+    min-width unset
+
+    & > div > div
+      margin-left 0
+
+  #appbar
   #rcnt > #center_col
     margin 0
   
-  #rcnt
+  #rcnt // right content
     max-width 100%
     justify-content center
+  
+  #rhs // right hand side
+    position absolute
+    left calc(50% + var(--center-width) / 2)
