@@ -1,0 +1,26 @@
+/* ==UserStyle==
+@name           google.com
+@version        1.0.0
+@namespace      d.wolf.gdn
+@preprocessor   stylus
+@description    Little tweaks for google.com 
+@author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sites/google.com/index.user.styl
+@homepageURL    https://github.com/devidw/user-styles/tree/master/sites/google.com
+@supportURL     https://github.com/devidw/user-styles/issues
+@license        Unlicense
+==/UserStyle== */
+
+@-moz-document url-prefix("https://google.com/search"), url-prefix("https://www.google.com/search")
+  #sfooter
+  #logo
+    display none
+
+  // form[action="/search"] > div:first-child > div:first-child
+  // #appbar
+  #rcnt > #center_col
+    margin 0
+  
+  #rcnt
+    max-width 100%
+    justify-content center
