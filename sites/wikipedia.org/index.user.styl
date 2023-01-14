@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           Wikipedia Reading
-@version        1.1.2
+@version        1.2.0
 @namespace      d.wolf.gdn
 @preprocessor   stylus
-@description    Clean, minimalistic Wikipedia redesign for reading.
+@description    Clean, minimalistic Wikipedia redesign for focused reading.
 @author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
 @updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sites/wikipedia.org/index.user.styl
 @homepageURL    https://github.com/devidw/user-styles/tree/master/sites/wikipedia.org
@@ -11,6 +11,7 @@
 @license        Unlicense
 @var checkbox   fixedToc "Fixed Toc" 1
 ==/UserStyle== */
+// @var checkbox   focusParagraphOnHover "Focus paragraph on mouseover" 1
 
 @-moz-document domain("wikipedia.org")
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap')
@@ -59,6 +60,11 @@
             .thumb.tleft
                 margin-left -10rem
 
+       // remove horizontal spacing from "in-article" box-notices
+        table[role="presentation"][class*="mbox"]
+            margin-left 0
+            margin-right 0
+
     if (fixedToc == 1)
         @media (min-width 1320px)
             #toc
@@ -74,7 +80,7 @@
                 font-size 1rem
 
                 &:not(:hover)
-                    filter brightness(0.6)
+                    filter opacity(0.6)
 
                 ul
                     max-height 95vh
@@ -82,3 +88,13 @@
                 
                 #mw-toc-heading
                     display none
+
+    // if (focusParagraphOnHover == 1)
+    //     @media (hover: hover) and (pointer: fine)
+    //         .mw-parser-output
+    //             // & > p
+    //             &:hover > *
+    //                 filter opacity(0.6) grayscale(1)
+
+    //             & > *:hover
+    //                 filter opacity(1) grayscale(0)
