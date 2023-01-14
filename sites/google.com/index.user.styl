@@ -16,34 +16,35 @@
   #logo
     display none
 
-  form[action="/search"]
-    width 100%
-    display flex
-    justify-content center
+  @media (min-width: 1600px)
+    form[action="/search"]
+      width 100%
+      display flex
+      justify-content center
 
-    & > div > div
-      padding-left 0
+      & > div > div
+        padding-left 0
 
-  #hdtb // header tool bar
-  #slim_appbar // X search results in Y seconds
-    display flex
-    justify-content center
+    #hdtb // header tool bar
+    #slim_appbar // X search results in Y seconds
+      display flex
+      justify-content center
 
-  #hdtb-msb 
-    width var(--center-width)
-    min-width unset
+    #hdtb-msb 
+      width var(--center-width)
+      min-width unset
 
-    & > div > div
-      margin-left 0
+      & > div > div
+        margin-left 0
 
-  #appbar
-  #rcnt > #center_col
-    margin 0
-  
-  #rcnt // right content
-    max-width 100%
-    justify-content center
-  
-  #rhs // right hand side
-    position absolute
-    left calc(50% + var(--center-width) / 2)
+    #appbar
+    #rcnt > #center_col
+      margin 0
+    
+    #rcnt // right content
+      max-width 100%
+      justify-content center
+    
+    #rhs // right hand side
+      position absolute
+      left calc(50% + var(--center-width) / 2)
