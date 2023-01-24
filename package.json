@@ -4,14 +4,34 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "stlint",
-    "lint:wiki": "stlint ./sites/wikipedia.org/index.user.styl",
+    "lint": "stylelint",
+    "lint:wiki": "stylelint ./sites/wikipedia.org/index.user.styl",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "stlint": "^1.0.65"
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-stylus": "^0.17.1"
+  },
+  "stylelint": {
+    "plugins": [
+      "stylelint-stylus"
+    ],
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-stylus/standard"
+    ],
+    "rules": {
+      "stylus/indentation": 4,
+      "stylus/property-no-unknown": null,
+      "stylus/no-eol-whitespace": null,
+      "selector-id-pattern": null,
+      "no-missing-end-of-source-newline": null,
+      "value-keyword-case": null,
+      "no-invalid-position-at-import-rule": null
+    }
   }
 }
