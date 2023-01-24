@@ -1,0 +1,17 @@
+{
+  "name": "user-styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stlint",
+    "lint:wiki": "stlint ./sites/wikipedia.org/index.user.styl",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stlint": "^1.0.65"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "color": false,
+    "useMixinInsteadUnit": false,
+    "colons": [
+      "never"
+    ],
+    "depthControl": {
+      "indentPref": 4
+    }
+  }
+}

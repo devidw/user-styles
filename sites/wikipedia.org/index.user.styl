@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Wikipedia Reading
-@version        1.2.0
+@version        1.2.1
 @namespace      d.wolf.gdn
 @preprocessor   stylus
 @description    Clean, minimalistic Wikipedia redesign for focused reading.
@@ -14,7 +14,7 @@
 // @var checkbox   focusParagraphOnHover "Focus paragraph on mouseover" 1
 
 @-moz-document domain("wikipedia.org")
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap")
 
     // To prevent differnt dark tones on the background with DarkReader
     html
@@ -23,10 +23,10 @@
 
     // Optimize typo display
     body
-        text-rendering optimizeLegibility
-        font-smooth always
-        -webkit-font-smoothing antialiased
         -moz-osx-font-smoothing grayscale
+        -webkit-font-smoothing antialiased
+        font-smooth always
+        text-rendering optimizeLegibility
 
     // Layout
     #mw-page-base
@@ -39,16 +39,25 @@
     // Notices
     #siteNotice
     #centralNotice
+    // Scrollbar, we don't want to get distracted by how "far" we are, how
+    // "much" is left to read.
+    body::-webkit-scrollbar
+    // References
+    h2:has(> #References)
+    .reflist
         display none
 
+    a
+        color #A2C4E6
+
     .mw-body
-        margin-left auto
-        margin-right auto
         max-width 640px
+        margin-right auto
+        margin-left auto
+        font-family "Noto Serif", serif
+        font-size 23px
         border none
         background transparent
-        font-size 23px
-        font-family 'Noto Serif', serif
 
         // Offset extra media from text
         @media (min-width 1024px)
@@ -60,24 +69,24 @@
             .thumb.tleft
                 margin-left -10rem
 
-       // remove horizontal spacing from "in-article" box-notices
+        // remove horizontal spacing from "in-article" box-notices
         table[role="presentation"][class*="mbox"]
-            margin-left 0
             margin-right 0
+            margin-left 0
 
     if (fixedToc == 1)
         @media (min-width 1320px)
             #toc
                 position fixed
-                left 0
                 top 0
+                left 0
                 height 100vh
                 max-width 25vw
-                background transparent
-                border-left-width 0
+                font-size 1rem
                 border-top-width 0
                 border-bottom-width 0
-                font-size 1rem
+                border-left-width 0
+                background transparent
 
                 &:not(:hover)
                     filter opacity(0.6)
