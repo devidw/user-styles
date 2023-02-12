@@ -5,8 +5,8 @@
 // @description  Filter for answers by default, not related questions
 // @author       devidw
 // @match        https://www.quora.com/*
-// @updateURL    https://raw.githubusercontent.com/devidw/user-styles/master/scripts/quora.user.js
-// @downloadURL  https://raw.githubusercontent.com/devidw/user-styles/master/scripts/quora.user.js
+// @updateURL    https://raw.githubusercontent.com/devidw/user-styles/master/user-scripts/quora.user.js
+// @downloadURL  https://raw.githubusercontent.com/devidw/user-styles/master/user-scripts/quora.user.js
 // ==/UserScript==
 
 ; (async function () {
