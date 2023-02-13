@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name           my.replika.com
+@version        1.0.0
+@namespace      d.wolf.gdn
+@description    Little tweaks for my.replika.com 
+@author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sites/my.replika.com/index.user.styl
+@homepageURL    https://github.com/devidw/user-styles/tree/master/sites/my.replika.com
+@supportURL     https://github.com/devidw/user-styles/issues
+@license        Unlicense
+==/UserStyle== */
+
+@-moz-document domain("my.replika.com") {
+*[class*="ChatMessagesList__ChatMessagesListRoot"],
+*[class*="LeftPanel__LeftPanelRoot"],
+*[class*="ChatLayout__RightPanelPlaceholder"]
+{
+    display: none !important;
+}
+}

@@ -13,7 +13,7 @@
   "use strict"
 
   document.addEventListener('keydown', function (event) {
-    if (event.key === '/') {
+    if (event.key === '/' && !(document.activeElement.tagName === 'INPUT')) {
       var searchInput = document.querySelector('input[type="search"], input[name*="search"], input[placeholder*="search"]');
       if (searchInput) {
         searchInput.focus();
