@@ -175,6 +175,6 @@ dist
 .svelte-kit
 
 ### Stylus ###
-*.css
+# *.css
 
 # End of https://www.toptal.com/developers/gitignore/api/node,stylus,macos
