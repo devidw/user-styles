@@ -20,7 +20,8 @@
     text-rendering: optimizeLegibility;
   }
 
-  article {
+  article,
+  #prompt-textarea {
     font-family: "Noto Serif", serif;
   }
 }
