@@ -1,0 +1,26 @@
+/* ==UserStyle==
+@name           chat gpt
+@version        1.0.0
+@namespace      d.wolf.gdn
+@description    chat gpt
+@author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
+@updateURL      https://raw.githubusercontent.com/devidw/user-styles/master/sites/chatgpt.com/index.user.styl
+@homepageURL    https://github.com/devidw/user-styles/tree/master/sites/chatgpt.com/
+@supportURL     https://github.com/devidw/user-styles/issues
+@license        Unlicense
+==/UserStyle== */
+
+@-moz-document domain("chatgpt.com") {
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
+    text-rendering: optimizeLegibility;
+  }
+
+  article {
+    font-family: "Noto Serif", serif;
+  }
+}
