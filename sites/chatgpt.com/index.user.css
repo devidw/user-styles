@@ -24,4 +24,17 @@
   #prompt-textarea {
     font-family: "Noto Serif", serif;
   }
+
+  @media screen and (prefers-color-scheme: dark) {
+    .prose,
+    .prose h3,
+    .prose strong {
+      color: #ccc !important;
+    }
+
+    *::selection {
+      background-color: #81afff;
+      color: black;
+    }
+  }
 }
