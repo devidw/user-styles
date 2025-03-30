@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           chat gpt
-@version        1.0.0
+@version        2.0.0
 @namespace      d.wolf.gdn
 @description    chat gpt
 @author         David Wolf <d@wolf.gdn> (https://d.wolf.gdn)
@@ -12,6 +12,7 @@
 
 @-moz-document domain("chatgpt.com") {
   @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap");
 
   body {
     -moz-osx-font-smoothing: grayscale;
@@ -22,7 +23,7 @@
 
   article,
   #prompt-textarea {
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif", "Noto Emoji", serif;
   }
 
   @media screen and (prefers-color-scheme: dark) {
